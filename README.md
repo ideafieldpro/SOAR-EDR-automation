@@ -444,8 +444,8 @@ Respond
 
 1. **Send Post-Isolation Notifications:**
     - After isolation, send another Slack message informing stakeholders that the machine has been isolated.
-      ![chrome_XSoEuPiJQD](https://github.com/user-attachments/assets/b10e45b8-21ad-4ddc-8751-2375262d93c4)
-      
+      ![slack_cF7YWxnJlF](https://github.com/user-attachments/assets/d5f1b6a0-63a6-4701-8d73-dba4c075d33b)
+
 2. **Test Entire Workflow:**
     - Ensure that all components work seamlessly together, from detection to alerts.
 
