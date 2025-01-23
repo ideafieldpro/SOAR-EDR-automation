@@ -401,7 +401,7 @@ Respond
 ### Step 5: Sending Alerts via Email
 
 1. **Add Email Action:**
-    - Drag the **Send Email** action into your workflow following the Slack message action.
+    - Drag the **Send Email** action into your Tines story following the Slack message action.
 2. **Configure Email Settings:**
     - Use an email address you can access easily.
     - Set the subject and body:
@@ -413,14 +413,21 @@ Respond
         
 3. **Test Email Functionality:**
     - Retrieve a detection and trigger the email action to confirm delivery.
+      ![chrome_BP9ILqDF5v](https://github.com/user-attachments/assets/afb69ae6-d378-415a-907a-6248b2887d24)
+      ![lQAA346qWA](https://github.com/user-attachments/assets/d1991fa4-ba3f-4b73-99c3-9a59563f3cca)
+
 
 ### Step 6: User Prompt for Machine Isolation
 
 1. **Create User Prompt Page:**
     - Drag the Page tool into your workflow, naming it `User Prompt`.
+      ![chrome_XSoEuPiJQD](https://github.com/user-attachments/assets/880dc210-587d-4bca-8ccf-ab6041cba5bf)
+
     - Configure it to ask whether the user wants to isolate the machine using Boolean Yes/No buttons.
 2. **Link User Actions:**
     - Connect Yes to isolation actions and No to an alert message stating, "Computer not isolated; please investigate."
+      ![chrome_y1p3VuZxmC](https://github.com/user-attachments/assets/d406e1eb-545c-4440-b249-5aca9cd2fe3a)
+
 
 ### Step 7: Automating Isolation Actions
 
@@ -430,13 +437,18 @@ Respond
     - Ensure that you use the correct sensor ID from Tine's detection body.
 3. **Test Isolation Process:**
     - Test by running through the user prompt and select Yes to verify that isolation occurs as intended.
+      ![chrome_6qOFv015kr](https://github.com/user-attachments/assets/0f8f5595-8742-468b-b71f-00f7144c8222)
+
 
 ### Step 8: Finalize Notifications Post-Isolation
 
 1. **Send Post-Isolation Notifications:**
     - After isolation, send another Slack message informing stakeholders that the machine has been isolated.
+      ![chrome_XSoEuPiJQD](https://github.com/user-attachments/assets/b10e45b8-21ad-4ddc-8751-2375262d93c4)
+      
 2. **Test Entire Workflow:**
     - Ensure that all components work seamlessly together, from detection to alerts.
+
 
 ### Part 5 Commentary
 
