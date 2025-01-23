@@ -1,4 +1,4 @@
-![chrome_OfGpINvi5L](https://github.com/user-attachments/assets/0cbd9c20-f51b-46f7-888f-842d91badd91)# SOAR & EDR Automation
+# SOAR & EDR Automation
 
 ## Objective
 
@@ -178,7 +178,7 @@ This project demonstrates the implementation of Security Orchestration, Automati
 
 1. If Windows blocks the download, click on the three dots next to the warning and select "Keep anyway."
 2. Open your Downloads folder and locate `lasagna.exe`.
-   ![chrome_LNp7OYJta8](https://github.com/user-attachments/assets/0e5097fe-5d3f-4c49-8476-1c2ca6649186)
+   ![chrome_eLYQp02k9u](https://github.com/user-attachments/assets/97a0bfeb-089e-40c6-8898-670940b78d9d)
 
 ### Step 3: Test Lasagna Tool with PowerShell
 
@@ -382,6 +382,8 @@ Respond
 
 1. **Set Up Template for Slack Messages:**
     - Drag the Slack message action into your Tines workflow.
+      ![chrome_76bEtYhHAr](https://github.com/user-attachments/assets/90d02680-dce2-46b9-9e82-56f9a58dc285)
+
     - Configure it to send messages to the created **Alert Channel**.
     - Use the channel ID copied from Slack.
       ![slack_yKsYGDRNqN](https://github.com/user-attachments/assets/fbdb3e36-0b5f-44fe-b097-c7fd463f5b8b)
