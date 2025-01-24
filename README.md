@@ -1,12 +1,12 @@
-# SOAR & EDR Automation
+# SOAR with EDR
 
 ## Objective
 
-This project demonstrates the implementation of Security Orchestration, Automation and Response (SOAR) capabilities integrated with Endpoint Detection and Response (EDR) using Lima Charlie and Tines. The focus was on creating automated workflows for security incident detection and response.
+This project demonstrates the implementation of Security Orchestration, Automation and Response (SOAR) capabilities integrated with Endpoint Detection and Response (EDR) using LimaCharlie and Tines. The focus was on creating automated workflows for security incident detection and response.
 
 ### Skills Learned
 
-- Configuration and deployment of Lima Charlie EDR
+- Configuration and deployment of LimaCharlie EDR
 - Creation of custom detection rules
 - Integration of automation workflows using Tines
 - Development of incident response playbooks
@@ -14,7 +14,7 @@ This project demonstrates the implementation of Security Orchestration, Automati
 
 ### Tools Used
 
-- **Lima Charlie** for EDR capabilities
+- **LimaCharlie** for EDR capabilities
 - **Tines** for automation and orchestration
 - [**Draw.io**](http://Draw.io) for workflow documentation
 - **PowerShell** for system administration
@@ -31,7 +31,7 @@ This project demonstrates the implementation of Security Orchestration, Automati
     - Label it "SORE EDR Playbook."
 3. **Add Detection and Notification Steps:**
     - Create a rounded rectangle for LimaCharlie detection.
-        - Label it "Lima Charlie detects hack tool."
+        - Label it "LimaCharlie detects hack tool."
     - Add a step for Tines receiving the detection.
         - Label it "Tines receives detection."
     - Create two branches from Tines:
@@ -85,10 +85,10 @@ This project demonstrates the implementation of Security Orchestration, Automati
       ![chrome_6jzjYAcpmu](https://github.com/user-attachments/assets/a1ffbf14-cd82-4525-9182-b52f68cd47d1)
 
 
-### Step 2: Create an Organization in Lima Charlie
+### Step 2: Create an Organization in LimaCharlie
 
 1. **Access LimaCharlie:**
-    - Navigate to [Lima Charlie's website](https://limacharlie.io/) and sign in/up using your chosen email provider.
+    - Navigate to [LimaCharlie's website](https://limacharlie.io/) and sign in/up using your chosen email provider.
 2. **Verify Your Email:**
     - Follow the instructions to verify your email address.
 3. **Create an Organization:**
@@ -118,7 +118,7 @@ This project demonstrates the implementation of Security Orchestration, Automati
       ![chrome_nhCMpy7Y9y](https://github.com/user-attachments/assets/f6f75c52-4e6a-4818-8e9f-a74c280c7598)
 
 2. **Download the Installation File:**
-    - Go to the EDR section for Windows 64-bit and copy the download link for the Lima Charlie executable.
+    - Go to the EDR section for Windows 64-bit and copy the download link for the LimaCharlie executable.
 3. **Open PowerShell:**
     - On your Windows server, right-click on PowerShell and select "Run as Administrator."
 4. **Navigate to Downloads Directory:**
@@ -146,7 +146,7 @@ This project demonstrates the implementation of Security Orchestration, Automati
 ### Step 5: Confirm Sensor Enrollment
 
 1. **Review Sensors List:**
-    - In Lima Charlie, go back to the "Sensors" section.
+    - In LimaCharlie, go back to the "Sensors" section.
     - Confirm that your newly installed sensor appears in the list with relevant details (hostname, IP addresses).
       ![chrome_ViG6bsMEfr](https://github.com/user-attachments/assets/aabb0777-bb32-4898-b295-641e95378d5e)
 
@@ -158,15 +158,15 @@ This project demonstrates the implementation of Security Orchestration, Automati
 
 ### Part 2 Commentary
 
-- Ensure that firewall rules are configured correctly to avoid connectivity issues with Lima Charlie.
-- Regularly check for updates and best practices from Lima Charlie documentation to stay informed about new features and improvements.
-- Use netstat and other monitoring tools within Lima Charlie to assess network activity and identify any suspicious behavior effectively.
+- Ensure that firewall rules are configured correctly to avoid connectivity issues with LimaCharlie.
+- Regularly check for updates and best practices from LimaCharlie documentation to stay informed about new features and improvements.
+- Use netstat and other monitoring tools within LimaCharlie to assess network activity and identify any suspicious behavior effectively.
 
 ## Part 3
 
 ### Step 1: Download the Lasagna Tool
 
-1. Navigate to the [Lasagna GitHub releases page](https://github.com/your-repo-link/releases) from your Windows server.
+1. Navigate to the [Lasagna GitHub releases page]([https://github.com/your-repo-link/releases](https://github.com/AlessandroZ/LaZagne)) from your Windows server.
 2. Click on `lasagna.exe` under the latest release.
 3. Note: You may need to disable Windows Security real-time protection:
     - Search for "Windows Security" in your Windows search bar.
@@ -323,9 +323,9 @@ Respond
 2. Click on **“Sign In.”**
 3. Choose to sign in, using your valid email account to facilitate confirmation.
 
-### Step 4: Configure Lima Charlie Outputs
+### Step 4: Configure LimaCharlie Outputs
 
-1. Log in to your Lima Charlie account.
+1. Log in to your LimaCharlie account.
 2. Select your organization from the dashboard.
 3. Click on **“Outputs.”**
 4. Click on **“ADD Output.”**
@@ -351,7 +351,7 @@ Respond
 ### Step 6: Test the Setup
 
 1. Generate an event on your server using PowerShell (e.g., type `.\lasagna.exe all` in the command line).
-2. Return to Lima Charlie and refresh the detection list.
+2. Return to LimaCharlie and refresh the detection list.
   ![chrome_ArNQbRJL0U](https://github.com/user-attachments/assets/5e53db3b-62ab-42bf-91c5-0f7b7796882b)
 3. Check the `Webhook` box in Tines for incoming messages related to the detection.
    ![chrome_flVvIVPT9n_mod](https://github.com/user-attachments/assets/504d259d-949f-499c-8c90-7497b450b252)
@@ -359,7 +359,7 @@ Respond
 ### Part 4 Commentary
 
 - Establishing a dedicated alerts channel in Slack helps streamline communication among security analysts, allowing them to respond quickly to incidents.
-- Using webhooks is an efficient way to connect Lima Charlie's detection capabilities with Slack, ensuring real-time alerts.
+- Using webhooks is an efficient way to connect LimaCharlie's detection capabilities with Slack, ensuring real-time alerts.
 - Common pitfalls include failures in webhook configuration; ensure URLs are accurate and that Slack permissions allow messages from integrations.
 
 ## Part 5
@@ -368,7 +368,7 @@ Respond
 
 1. **Analyze Previous Parts:** Ensure you understand the workflows created in the previous sections. This includes confirming detection of infected hosts.
 2. **Retrieve Detections:**
-    - Click on **Retrieve Detection** in Lima Charlie.
+    - Click on **Retrieve Detection** in LimaCharlie.
     - Ensure events are visible; look for relevant detection events.
 
 ### Step 2: Create Slack and Tines Integration
